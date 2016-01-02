@@ -30,7 +30,7 @@ void loop() {
 
   // calibrate
   lightCurrent = analogRead(PHOTO);
-  if (calMin > currentLight) {
+  if (calMin > lightCurrent) {
     calMin = lightCurrent;
   }
   if (calMax < lightCurrent) {
